@@ -13,3 +13,5 @@ nashdat <- dat %>%
   filter(proj_cty=="NASHVILLE")
 ```
 
+TN_LIHTC <- LIHTCPUB%>%
+  filter(proj_st=="TN")
