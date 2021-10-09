@@ -1,0 +1,15 @@
+initialization
+```{r}
+library(tidyverse)
+library(dplyr)
+library(readr)
+LIHTCPUB <- read_csv("LIHTCPUB.CSV")
+dat <- LIHTCPUB
+remove(LIHTCPUB)
+```
+filtering 
+```{r}
+nashdat <- dat %>%
+  filter(proj_cty=="NASHVILLE")
+```
+
